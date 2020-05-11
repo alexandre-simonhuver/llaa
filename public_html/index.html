@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="fr">
     <head>
-        <title>Projet solidartié</title>
+        <title>Bonaparte solidaire de nos héros du quotidien !</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="José GIL">
+        <link href="styles3.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="favicon.ico">
     </head>
     <body>
-        
+        <div class="container">
+            <header class="box box-1">
+			<img src="logo-merci1.png" alt="Logo de remerciements n°1 - Un coeur dans une main et le message merci à tous nos héros du quotidien">
+				<div class="soustitre">
+					<h1>Covid19 - Le Lycée Bonaparte de Toulon, sa communauté scolaire et son réseau se mobilisent pour adresser leurs remerciements et leur soutien à nos héros du quotidien.</h1>
+					<h2>Bonaparte solidaire de nos héros du quotidien !</h2>
+				</div>
+				<img src="logo-merci2.png" alt="Logo de remerciements n°2 - Des pictogrammes représentants tous les métiers actuellement sollicités et le message merci">
+            </header>
+			<nav>
+				<a href="index.php">🏠 Accueil</a>
+			</nav>
+            <iframe class="box box-2" src="https://solidarite.lyc-bonaparte.fr/fr/wl/?id=0FxUK8LvQu7Fon1lUAyHxPXlTF36I4bt&mode=gallery"></iframe>
+            <footer class="box box-3">
+				<p>Contacts : <a href="mailto:arnaud.grulier@ac-nice.fr">arnaud.grulier@ac-nice.fr</a> ou <a href="mailto:frederic.lassarre@ac-nice.fr">frederic.lassarre@ac-nice.fr</a> - C'est la visite n°6010 !</p>
+			</footer>
+        </div>
+        <script>
+            document.querySelector('iframe').contentWindow.window.addEventListener("load", function () {
+                document.querySelector('iframe').contentWindow.window.document.querySelector('body').lastElementChild.style = "background-color:#0F0F0F;color:white;";
+            });
+        </script>
     </body>
 </html>
