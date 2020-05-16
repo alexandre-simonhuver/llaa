@@ -45,7 +45,37 @@
             </nav>
             
             <h1>FORMULAIRE</h1>
-            
+            <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
+                <fieldset id="coordo">
+                    <legend>Pour mieux vous connaître</legend>
+                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
+                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
+                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
+                    <div>
+                        <label for="lst_typeclient">Vous êtes : </label>
+                        <select name="lst_typeclient" id="lst_typeclient">
+                            <option value="1">Étudiant</option>
+                            <option value="2">Personnel du lycée</option>
+                            <option value="3">Parent ou famille</option>
+                            <option value="4">Extérieur au lycée</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div><label for="area_precisions">Votre message : </label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                    </div>
+                </fieldset>
+                <fieldset id="motif">
+                    <legend>Motif du contact</legend>
+                    <div><input type="radio" name="rd_motif" value="deminfo" id="rd_deminfo"> <label for="rd_deminfo">Demande d'information</label></div>
+                    <div><input type="radio" name="rd_motif" value="reclam" id="rd_reclam"> <label for="rd_reclam">Réclamation</label></div>
+                    <div><input type="radio" name="rd_motif" value="satis" id="rd_satis"> <label for="rd_satis">Satisfaction</label></div>
+                    <div><input type="radio" name="rd_motif" value="suivi" id="rd_suivi"> <label for="rd_suivi">Suivi de commande</label></div>
+                    <div><input type="radio" name="rd_motif" value="pub" id="rd_pub"> <label for="rd_pub">Publicité</label></div>
+                    <div><input type="radio" name="rd_motif" value="autre" id="rd_autre"> <label for="rd_autre">Autre...</label></div>
+                    <div><label for="area_precisions">Si "Autre", veuillez préciser :</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                </fieldset>
+                <div id="controles"><input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> <input type="reset" name="rst_annuler" value="Effacer les réponses"></div>
+            </form>
             <footer>
                 <div class="soustitre">
                     <h2>Bonaparte solidaire de nos héros du quotidien !</h2>
