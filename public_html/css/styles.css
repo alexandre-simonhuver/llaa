@@ -24,9 +24,12 @@ h1 {
 	/*padding-top: 25px;*/
 }
 
+header {
+    padding-top: 50px;
+}
+
 header img {
     height: 165px;
-	padding-top: 25px;
 }
 
 h2 {
