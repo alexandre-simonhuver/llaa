@@ -1,96 +1,124 @@
-html,
-body {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: #0F0F0F;
-    margin-top: -20px;
+#contact h1 {
+    margin-top: 10px;
+    text-align: left;
 }
 
-h1 {
-    color: #0091E9;
-    padding-left: 10px;
-	font-size: x-large;
-}
-
-.container {
-    height: 100%;
-    min-height: 100%;
-    display: -webkit-box;
+#contact form {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-	/*padding-top: 25px;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-top: 10px;
 }
 
-header {
-    padding-top: 50px;
-    padding-bottom: 25px;
-}
-
-header img {
-    height: 165px;
-}
-
-h2 {
-	color: #0091E9;
-	padding: 0 25px;
-	font-size: large;
-}
-
-
-
-.container header.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-	margin: 0 10px;
-}
-
-.container .box {
-    text-align: center;
-    font-family: sans-serif;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-}
-/*.container .box-1 {
-    flex: 1;
-}*/
-.soustitre {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}
-.container .box-2 {
-    -webkit-box-flex: 1;
-    flex: 1;
-}
-.container .box-3 {
+#contact form fieldset {
     padding: 10px;
-    font-size: large;
-    line-height: 1em;
-    font-style: italic;
-    color: #0091E9;
-    display: inline-block;
-    vertical-align: top;
 }
 
-iframe {
-    border-left: none;
-    border-right: none;
-    border-top-color: #0091E9;
-    border-bottom-color: #0091E9;
-    border-top: thin solid #0091E9;
-    border-bottom: none;
-    padding: 10px 0;
+#coordo legend {
+    padding: 0 5px;
+    font-weight: bold;
+    color : white;
 }
 
-footer p { font-size: small; }
-footer p a { text-decoration: none; color: white; }
+#coordo label {
+    color : white;
+    margin-right: 10px;
+}
+
+#coordo input, #coordo select {
+    flex: 1;
+}
+
+#coordo div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#coordo input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#coordo #marques label {
+    text-transform: capitalize;
+}
+
+#coordo fieldset {
+    width: fit-content;
+    margin: auto;
+}
+
+#motif {
+    align-self: flex-start;
+}
+
+#motif legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+#motif div {
+    margin: 10px;
+}
+
+#motif label {
+    margin-left: 10px;
+}
+
+#controles {
+    margin-top: 10px;
+}
+
+#controles input {
+    padding: 10px;
+}
+
+#controles input:first-child {
+    margin-right: 10px;
+}
+
+input:valid, :not(input[type="submit"]) {
+    color: green;
+}
+input:invalid {
+    color: red;
+}
+
+#coordo div.input-validation {
+    margin: 0;
+}
+
+input[type="text"]:valid ~ .input-validation::before,
+input[type="email"]:valid ~ .input-validation::before {
+    content: "✔";
+    margin-left: 5px;
+    color: green;
+}
+
+@media screen and (max-width:576px) {
+    #motif {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact h1 {
+        width: 100%;
+    }
+    #coordo {
+        width: 100%;
+    }
+    #motif {
+        width: fit-content;
+    }
+    #controles {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
