@@ -70,5 +70,15 @@ h2 {
 }
 
 footer {
+    display: flex; /* Ce conteneur est "flexible" */
     padding-top: 10px;
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    bottom: 0px; /* Bas */
+    height: 20px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color: black;
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
 }
