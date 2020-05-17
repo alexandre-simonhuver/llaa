@@ -5,16 +5,19 @@
 
         <meta charset="UTF-8">
         <meta name="author" content="Luke/Alexis/Alexandre/Logan">
+        
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link href="../css/styles.css" rel="stylesheet" type="text/css">
         <link href="../css/nous-contacter.css" rel="stylesheet" type="text/css">
+        
         <script src="../js/formulaire.js" type="text/javascript"></script>
+        
         <link rel="icon" href="../images/favicon.ico">
     </head>
 
     <body>
         <div class="container">
-            <header class="box box-1">
+            <header class="box">
                 <img src="../images/logo-merci1.png" alt="Logo de remerciements n°1 - Un coeur dans une main et le message merci à tous nos héros du quotidien">
 
                 <div class="soustitre">
@@ -29,30 +32,38 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Accueil</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productions</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../pages/album.html">Toutes les productions</a>
-                            <a class="dropdown-item" href="#">Eleves</a>
-                            <a class="dropdown-item" href="#">Personnels</a>
-                            <a class="dropdown-item" href="#">Familles</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Vidéos</a>
-                        </div>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="productions.html">Productions</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link active" href="nous-contacter.html">Contact</a>
                     </li>
                 </ul>
             </nav>
             
-            <h1>FORMULAIRE</h1>
             <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
                 <fieldset id="coordo">
                     <legend>Pour mieux vous connaître</legend>
-                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
+                    <div>
+                        <label for="i_nom">Votre nom :</label> 
+                        <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required>
+                        <div class="input-validation"></div>
+                    </div>
+                    
+                    <div>
+                        <label for="i_prenom">Votre prénom :</label> 
+                        <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required>
+                        <div class="input-validation"></div>
+                    </div>
+                    
+                    <div>
+                        <label for="i_email">Votre e-mail :</label> 
+                        <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <div class="input-validation"></div>
+                    </div>
+                    
                     <div>
                         <label for="lst_typeclient">Vous êtes : </label>
                         <select name="lst_typeclient" id="lst_typeclient">
@@ -62,18 +73,27 @@
                             <option value="4">Extérieur au lycée</option>
                         </select>
                     </div>
+                    
                     <div>
-                        <div><label for="area_precisions">Votre message : </label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                        <div>
+                            <label for="area_precisions">Votre message : </label><br>
+                            <textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea>
+                        </div>
                     </div>
                 </fieldset>
-                <div id="controles"><input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> <input type="reset" name="rst_annuler" value="Effacer les réponses"></div>
-            </form>
-            <footer>
-                <div class="soustitre">
-                    <h2>Bonaparte solidaire de nos héros du quotidien !</h2>
+                
+                <div id="controles">
+                    <input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> 
+                    <input type="reset" name="rst_annuler" value="Effacer les réponses">
                 </div>
-            </footer>
+            </form>
         </div>
+        
+        <footer>
+            <div class="soustitre">
+                <h2>Bonaparte solidaire de nos héros du quotidien !</h2>
+            </div>
+        </footer>
         
         <script src="../js/jquery-3.5.1.slim.min.js"></script>
         <script src="../js/popper.min.js"></script>
