@@ -1,6 +1,6 @@
 #contact h1 {
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 #contact form {
@@ -26,22 +26,14 @@
     margin-right: 10px;
 }
 
-#coordo input, #coordo select {
-    flex: 1;
-}
-
 #coordo div {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 
-#coordo input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-#coordo #marques label {
-    text-transform: capitalize;
+#coordo input {
+    flex: 1;
 }
 
 #coordo fieldset {
@@ -49,23 +41,20 @@
     margin: auto;
 }
 
-#motif {
+#numero {
     align-self: flex-start;
 }
 
-#motif legend {
+#numero legend {
     padding: 0 5px;
     font-weight: bold;
+    color: white;
 }
 
-#motif div {
-    margin: 10px;
-}
 
-#motif label {
-    margin-left: 10px;
+#numero p{
+    color : white;
 }
-
 #controles {
     margin-top: 10px;
 }
@@ -97,7 +86,7 @@ input[type="email"]:valid ~ .input-validation::before {
 }
 
 @media screen and (max-width:576px) {
-    #motif {
+    #numero {
         margin-top: 20px;
     }
 }
@@ -113,7 +102,7 @@ input[type="email"]:valid ~ .input-validation::before {
     #coordo {
         width: 100%;
     }
-    #motif {
+    #numero {
         width: fit-content;
     }
     #controles {
