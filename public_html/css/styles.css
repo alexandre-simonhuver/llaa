@@ -21,12 +21,11 @@ h1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-	/*padding-top: 25px;*/
 }
 
 header {
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -43,7 +42,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-	margin: 0 10px;
+    margin: 10px;
 }
 
 .container .box {
@@ -58,27 +57,18 @@ h2 {
     justify-content: center;
 }
 
-.soustitre {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.container .box-2 {
+.container .box-1 {
     webkit-box-flex: 1;
     flex: 1;
 }
-.container .box-3 {
-    padding: 10px;
-    font-size: large;
-    line-height: 1em;
-    font-style: italic;
-    color: #0091E9;
-    display: inline-block;
-    vertical-align: top;
+
+.soustitre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-footer h2 {
-    padding-top: 25px;
+footer {
+    padding-top: 10px;
 }

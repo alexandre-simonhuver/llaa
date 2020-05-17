@@ -1,9 +1,5 @@
 iframe {
-    border-left: none;
-    border-right: none;
-    border-top-color: #0091E9;
-    border-bottom-color: #0091E9;
-    border-top: thin solid #0091E9;
-    border-bottom: none;
-    padding-bottom: 125px 0;
+    border: thin solid #0091E9;
+    border-color: #0091E9;
+    padding: 0px;
 }
