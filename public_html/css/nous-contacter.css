@@ -55,12 +55,15 @@
 #numero p{
     color : white;
 }
+
 #controles {
     margin-top: 10px;
+    display:flex;
+    justify-content: center;
 }
 
 #controles input {
-    padding: 0px;
+    padding: 10px;
 }
 
 #controles input:first-child {
