@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     margin-top: 10px;
 }
 
@@ -51,19 +51,18 @@
     color: white;
 }
 
-
 #numero p{
     color : white;
 }
 
 #controles {
-    margin-top: 10px;
+    margin-top: 0px;
     display:flex;
     justify-content: center;
 }
 
 #controles input {
-    padding: 10px;
+    padding-bottom: 40px;
 }
 
 #controles input:first-child {
