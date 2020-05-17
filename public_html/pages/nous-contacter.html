@@ -27,28 +27,28 @@
                 <img src="../images/logo-merci2.png" alt="Logo de remerciements n°2 - Des pictogrammes représentants tous les métiers actuellement sollicités et le message merci">
             </header>
         </div>
-            <nav>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productions</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="productions.html">Toutes les productions</a>
-                            <a class="dropdown-item" href="prod_productions_des_élèves.html">Elèves</a>
-                            <a class="dropdown-item" href="prod_production_personnels.html">Personnels du lycée</a>
-                            <a class="dropdown-item" href="prod_production_des_familles.html">Famille des lycéens</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="prod_Les_vidéo.html">Vidéos</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="nous-contacter.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productions</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="productions.html">Toutes les productions</a>
+                        <a class="dropdown-item" href="prod_productions_des_élèves.html">Elèves</a>
+                        <a class="dropdown-item" href="prod_production_personnels.html">Personnels du lycée</a>
+                        <a class="dropdown-item" href="prod_production_des_familles.html">Famille des lycéens</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="prod_Les_vidéo.html">Vidéos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="nous-contacter.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="contact">
             <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
                 <fieldset id="coordo">
                     <legend>Pour mieux vous connaître</legend>
@@ -87,12 +87,19 @@
                         </div>
                     </div>
                 </fieldset>
-
+                <fieldset id="numero">
+                    <legend>Numéro Vert</legend>
+                    <button type="button" class="btn btn-success">0800 130 000</button>
+                    <p>Voici le numéro vert spécial coronavirus. Si vous avez des questions non médicales concernant ce virus</p>
+                    <p>veuillez appeler ce numéro pour ne pas engorger le 15 (à utiliser si vous avez des symptômes).</p>
+                </fieldset>
                 <div id="controles">
                     <input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> 
                     <input type="reset" name="rst_annuler" value="Effacer les réponses">
                 </div>
             </form>
+        </section>
+
         <footer>
             <div class="soustitre">
                 <h2>Bonaparte solidaire de nos héros du quotidien !</h2>
