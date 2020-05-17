@@ -9,6 +9,7 @@ a:hover{
 #onglet{
     margin-left: 60px;
     margin-right: 60px;
+    justify-content: center;
 }
 .btn-primary, .btn-danger, .btn-light{
     margin-right: 10px;
