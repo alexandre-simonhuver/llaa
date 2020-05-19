@@ -110,3 +110,8 @@ footer {
     color: #bbb; /* Couleur du texte */
     text-align:center; /* Texte centré */
 }
+
+.imgtaille{
+    width: 200px;
+    height: 300px;
+}
