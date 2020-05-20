@@ -135,7 +135,7 @@ nav input{display: none;}
         position: relative;
         top: 7px;
         left: 7px;
-        z-index: 1;
+        z-index: 10;
     }
 
     nav ul {
