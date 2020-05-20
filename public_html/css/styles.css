@@ -115,3 +115,24 @@ footer {
     width: 200px;
     height: 300px;
 }
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: large;
+    }
+
+    header, section {
+        width: auto; /* Suppression de la largeur définie */
+    }
+
+    header img {
+        width: 100%; /* Bannière sur toute la largeur */
+        background-color: black; /* Extension artificielle noire */
+        padding-bottom: 15px; /* du bas de l'image sur 15 pixels */
+        align-content: center;
+    }
+    
+    section article{
+        text-align: center;
+    }
+}
