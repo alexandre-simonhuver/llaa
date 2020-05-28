@@ -203,4 +203,7 @@ nav input{display: none;}
     nav input:checked ~ ul {
         transform: none;
     }
+    .depmenu{
+        margin-bottom: 15px;
+    }
 }
