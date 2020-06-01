@@ -120,8 +120,7 @@ nav input{display: none;}
 @media screen and (max-width:768px) {
     
     p{
-        text-align: center !important;
-       
+        text-align: center !important; 
     }  
     .container-1{
         width: 100% !important;
@@ -137,7 +136,10 @@ nav input{display: none;}
         left: 7px;
         z-index: 10;
     }
-
+    
+    h1 {
+        font-size: 20px !important; 
+    }
     nav ul {
         display: flex; /* Ce conteneur est "flexible" */
         flex-direction: column; /* Les éléments sont mis côte à côte */
